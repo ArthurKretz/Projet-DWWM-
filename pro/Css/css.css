@@ -7,6 +7,10 @@
 }
 
 /*haut de page*/
+#logo {
+  width: 7em;
+  position: absolute;
+}
 #sauv{
     text-transform: uppercase;
     color:#FF0000 ;
@@ -145,6 +149,18 @@
   width: 54em;
   position: relative;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
 /* Mentions légale*/
 #mentions {
   text-align: center;
@@ -208,6 +224,3 @@ span:hover:after {
   cursor: default;
 }
 /*Hover plan*/
-#plan:hover{
-  ;
-}

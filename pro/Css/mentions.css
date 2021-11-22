@@ -1,0 +1,100 @@
+/*police*/
+
+@font-face {
+  font-family:"rock" ;
+  src: url(/RocknRollOne-Regular.ttf);
+}
+
+/*haut de page*/
+#logo {
+  width: 7em;
+  position: absolute;
+}
+#sauv{
+    text-transform: uppercase;
+    color:#FF0000 ;
+    text-align: center;
+    font-size: 50px;
+    font-family: rock;
+    
+}
+#sal {
+  font-family: rock;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu {
+    display: flex;                
+    padding: 20px;;                    
+    background-color: rgb(0, 0, 0);       
+    justify-content: space-around; 
+    color:#B29F9F;
+    list-style-type: none ;  
+    text-transform: uppercase;
+    font-family: rock;
+} 
+.menu li a {
+  color:#B29F9F;
+  text-decoration: none;
+  
+}
+#mentions {
+    text-align: center;
+    position: relative;
+    text-align: center;
+    color:#B29F9F;
+    font-size:  18px; ;
+    font-family: rock;
+  }
+  .gras {
+    color: black;
+    
+  }
+  /*Hover menu*/
+span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+  
+  span:before {
+    left: -2.5px;
+  }
+  span:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+  /*Hover logo*/
+  #sauv:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
+    cursor: default;
+  }
+  #sal:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
+    cursor: default;
+  }
